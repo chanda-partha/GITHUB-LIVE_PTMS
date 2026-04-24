@@ -31,7 +31,7 @@ async function findRoute() {
     }));
 
     
-    window.location.href = "route_find_interface.html";
+    window.location.href = "./html/route_find_interface.html";
 }
 
 
