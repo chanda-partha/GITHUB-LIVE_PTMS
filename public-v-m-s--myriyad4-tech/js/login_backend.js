@@ -39,7 +39,6 @@ window.loginUser = function () {
 
             const user = userCredential.user;
 
-            //
             const docRef = doc(db, "users", user.uid);
 
             getDoc(docRef)
