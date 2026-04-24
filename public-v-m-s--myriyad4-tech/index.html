@@ -14,6 +14,9 @@
 
 <body>
 
+    
+<!--Made by - Najnin Sultana - 1212-->
+
     <!-- VIDEO -->
     <video autoplay loop muted class="back-video">
         <source src="./images/video.mp4" type="video/mp4">
@@ -155,7 +158,7 @@
                 authMenu.style.display === "flex" ? "none" : "flex";
         });
 
-        // Close auth menu when clicking outside
+      
         document.addEventListener("click", (e) => {
             if (!connectBtn.contains(e.target) && !authMenu.contains(e.target)) {
                 authMenu.style.display = "none";
@@ -169,7 +172,7 @@
             dropdown.classList.toggle("open");
         });
 
-        // Close dropdown when clicking outside
+        
         document.addEventListener("click", (e) => {
             if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
                 dropdown.classList.remove("open");

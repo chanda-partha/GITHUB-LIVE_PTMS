@@ -17,8 +17,7 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 const storage = getStorage(app);
 
-
-
+//Made By - Partha Chanda - 1205
 function showMessage(message, type, divId) {
   const messageDiv = document.getElementById(divId);
   if (!messageDiv) return;
@@ -85,7 +84,6 @@ register.addEventListener('click', async (event) => {
     return showMessage("Passwords do not match.", "danger", "signUpMessage");
   }
 
-  
 
   try {
    

@@ -12,8 +12,7 @@ import {
     doc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-
-
+//Made By - Partha Chanda - 1205
 const firebaseConfig = {
     apiKey: "AIzaSyAa0LS8iUVaYrar-bXk65SpaJJoW7CgNR0",
     authDomain: "myriyad4-tech.firebaseapp.com",
@@ -22,8 +21,6 @@ const firebaseConfig = {
     messagingSenderId: "486392673926",
     appId: "1:486392673926:web:3aaad5395d2b2ddc738307"
 };
-
-
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);

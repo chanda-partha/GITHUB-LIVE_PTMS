@@ -42,4 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
     showSection('dashboard');
 });
 
-//PARTHA & TIBRO 
+//PARTHA 1205 & TIBRO 1240 

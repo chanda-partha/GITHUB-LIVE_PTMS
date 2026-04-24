@@ -27,11 +27,10 @@ const firebaseConfig = {
   appId: "1:486392673926:web:3aaad5395d2b2ddc738307"
 };
 
+//Made By - Partha Chanda - 1205
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
-
-
 
 const body = document.querySelector('body');
 const sidebar = document.querySelector('.sidebar');
@@ -39,7 +38,7 @@ const toggle = document.querySelector('.toggle');
 const modeSwitch = document.querySelector(".toggle-switch");
 const modeText = document.querySelector('.mode-text');
 
-// Dark Mode
+
 if (modeSwitch) {
   modeSwitch.addEventListener('click', () => {
     body.classList.toggle('dark');
@@ -49,14 +48,14 @@ if (modeSwitch) {
   });
 }
 
-// Sidebar Toggle
+
 if (toggle) {
   toggle.addEventListener('click', () => {
     if (sidebar) sidebar.classList.toggle('close');
   });
 }
 
-// Section Switch
+
 window.showIcons = function (id) {
   document.querySelectorAll(".icon-controled").forEach(el => el.classList.remove("active"));
   const target = document.getElementById(id);
@@ -72,7 +71,7 @@ const preview = document.getElementById("previewImage");
 const saveBtn = document.getElementById("savePhotoBtn");
 const sidebarImg = document.getElementById("sidebarPhoto");
 
-// Load image
+
 window.addEventListener("load", () => {
   const savedImage = localStorage.getItem("profilePhoto");
   if (savedImage && sidebarImg) {

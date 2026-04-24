@@ -13,7 +13,7 @@ const firebaseConfig = {
     appId: "1:486392673926:web:3aaad5395d2b2ddc738307"
 };
 
-
+//Made By - Partha Chanda - 1205
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
 const db = getFirestore();

@@ -5,7 +5,7 @@ const toggle    = document.querySelector('.toggle');
 const modeSwitch = document.querySelector(".toggle-switch");
 const modeText  = document.querySelector('.mode-text');
 
-// DARK MODE
+//Made By - Partha Chanda - 1205
 if (modeSwitch) {
     modeSwitch.addEventListener('click', () => {
         body.classList.toggle('dark');
@@ -13,14 +13,14 @@ if (modeSwitch) {
     });
 }
 
-// SIDEBAR TOGGLE
+
 if (toggle) {
     toggle.addEventListener('click', () => {
         sidebar.classList.toggle('close');
     });
 }
 
-// ICON SWITCH SYSTEM
+
 window.showIcons = function (showElementID) {
     document.querySelectorAll(".icon-controled").forEach(el => el.classList.remove("active"));
     const target = document.getElementById(showElementID);
