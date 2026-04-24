@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./css/index.css">
 
     <title>Home Page</title>
@@ -18,21 +18,6 @@
     <video autoplay loop muted class="back-video">
         <source src="./images/video.mp4" type="video/mp4">
     </video>
-
-    <!-- FORM -->
-    <div class="form">
-        <div class="input-box">
-            <input type="text" placeholder="Pickup Point" id="pickup">
-            <i class="fa-solid fa-location-dot"></i>
-        </div>
-
-        <div class="input-box">
-            <input type="text" placeholder="Destination Point" id="destination">
-            <i class="fa-solid fa-location-arrow"></i>
-        </div>
-
-        <button class="find-route" onclick="findRoute()">Find Route</button>
-    </div>
 
     <!-- HEADER -->
     <header>
@@ -65,52 +50,70 @@
 
         <!-- MOBILE MENU -->
         <div class="dropdown_menu" id="dropdown">
-            <li><a href="./html/index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./html/about.html">About</a></li>
             <li><a href="./html/system_feature.html">System</a></li>
-            <li><a href="#">Contact</a></li>
-
+            <li><a href="./html/contactUs.html">Contact</a></li>
+            <li class="dropdown_connect">
+                <a href="./html/login.html">Login</a>
+                <a href="./html/registration_selection.html">Register</a>
+            </li>
         </div>
     </header>
+
+    <!-- FORM -->
+    <div class="form">
+        <div class="input-box">
+            <input type="text" placeholder="Pickup Point" id="pickup">
+            <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Destination Point" id="destination">
+            <i class="fa-solid fa-location-arrow"></i>
+        </div>
+
+        <button class="find-route" onclick="findRoute()">Find Route</button>
+    </div>
 
     <!-- CAROUSEL -->
     <div class="carousel">
         <div class="carousel-track">
 
             <div class="group">
-                <div class="card"><img src="./images/map.jpeg"></div>
-                <div class="card"><img src="./images/police.png"></div>
-                <div class="card"><img src="./images/vehicles.jpeg"></div>
-                <div class="card"><img src="./images/kbyg.png"></div>
-                <div class="card"><img src="./images/spvms.png"></div>
-
-
-            <div class="group" style="margin-left: 15px;">
-                <div class="card"><img src="./images/map.jpeg"></div>
-                <div class="card"><img src="./images/police.png"></div>
-                <div class="card"><img src="./images/vehicles.jpeg"></div>
-                <div class="card"><img src="./images/kbyg.png"></div>
-                <div class="card"><img src="./images/spvms.png"></div>
+                <div class="card"><img src="./images/map.jpeg" alt="map"></div>
+                <div class="card"><img src="./images/police.png" alt="police"></div>
+                <div class="card"><img src="./images/vehicles.jpeg" alt="vehicles"></div>
+                <div class="card"><img src="./images/kbyg.png" alt="kbyg"></div>
+                <div class="card"><img src="./images/spvms.png" alt="spvms"></div>
             </div>
 
             <div class="group" style="margin-left: 15px;">
-                <div class="card"><img src="./images/map.jpeg"></div>
-                <div class="card"><img src="./images/police.png"></div>
-                <div class="card"><img src="./images/vehicles.jpeg"></div>
-                <div class="card"><img src="./images/kbyg.png"></div>
-                <div class="card"><img src="./images/spvms.png"></div>
+                <div class="card"><img src="./images/map.jpeg" alt="map"></div>
+                <div class="card"><img src="./images/police.png" alt="police"></div>
+                <div class="card"><img src="./images/vehicles.jpeg" alt="vehicles"></div>
+                <div class="card"><img src="./images/kbyg.png" alt="kbyg"></div>
+                <div class="card"><img src="./images/spvms.png" alt="spvms"></div>
             </div>
 
             <div class="group" style="margin-left: 15px;">
-                <div class="card"><img src="./images/map.jpeg"></div>
-                <div class="card"><img src="./images/police.png"></div>
-                <div class="card"><img src="./images/vehicles.jpeg"></div>
-                <div class="card"><img src="./images/kbyg.png"></div>
-                <div class="card"><img src="./images/spvms.png"></div>
+                <div class="card"><img src="./images/map.jpeg" alt="map"></div>
+                <div class="card"><img src="./images/police.png" alt="police"></div>
+                <div class="card"><img src="./images/vehicles.jpeg" alt="vehicles"></div>
+                <div class="card"><img src="./images/kbyg.png" alt="kbyg"></div>
+                <div class="card"><img src="./images/spvms.png" alt="spvms"></div>
             </div>
+
+            <div class="group" style="margin-left: 15px;">
+                <div class="card"><img src="./images/map.jpeg" alt="map"></div>
+                <div class="card"><img src="./images/police.png" alt="police"></div>
+                <div class="card"><img src="./images/vehicles.jpeg" alt="vehicles"></div>
+                <div class="card"><img src="./images/kbyg.png" alt="kbyg"></div>
+                <div class="card"><img src="./images/spvms.png" alt="spvms"></div>
+            </div>
+
         </div>
     </div>
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -136,9 +139,7 @@
             <p class="footer-copy">
                 © 2026 MYRIYAD4 TECH. All rights reserved.
             </p>
-            <p class="footer-copy" style=" font-size: 10px;">
-
-            </p>
+            <p class="footer-copy" style="font-size: 10px;"></p>
 
         </div>
     </footer>
@@ -154,16 +155,28 @@
                 authMenu.style.display === "flex" ? "none" : "flex";
         });
 
+        // Close auth menu when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!connectBtn.contains(e.target) && !authMenu.contains(e.target)) {
+                authMenu.style.display = "none";
+            }
+        });
+
         const toggleBtn = document.getElementById("toggle-btn");
         const dropdown = document.getElementById("dropdown");
 
         toggleBtn.addEventListener("click", () => {
             dropdown.classList.toggle("open");
         });
+
+        // Close dropdown when clicking outside
+        document.addEventListener("click", (e) => {
+            if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove("open");
+            }
+        });
     </script>
     <script src="./js/route_find_interface.js"></script>
-
-
 
     <!--  MADE BY -- NAJNIN SULTANA  -->
 </body>
